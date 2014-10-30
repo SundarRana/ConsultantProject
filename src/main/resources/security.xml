@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:p="http://www.springframework.org/schema/p"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    
+    
+    
+    
+<!--    
+    <http auto-config='true'>
+        <intercept-url pattern="/secure/**" access="ROLE_USER" requires-channel="https"/>
+        <session-management invalid-session-url="/login?time=1">
+            <concurrency-control max-sessions="1" expired-url="/login?time=1" />
+        </session-management>
+        <intercept-url pattern="/list"/>
+        <form-login login-page="/login"/>
+        <logout logout-url="/logout" logout-success-url="/home"/>
+    </http>
+    
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="rossi" password="hello" authorities="ROLE_USER" />
+                <user name="bob" password="hello" authorities="ROLE_USER" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+    
+    <context:property-placeholder location="classpath:database.properties"/>
+    
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${db.class}"/>
+        <property name="url" value="${db.url}"/>
+        <property name="username" value="${db.username}"/>
+        <property name="password" value="${db.password}"/>
+    </bean>
+    -->
+</beans:beans>
